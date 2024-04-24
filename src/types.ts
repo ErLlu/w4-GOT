@@ -16,14 +16,14 @@ export interface King extends Character {
 
 export interface Fighter extends Character {
   weapon: string;
-  skill: Level;
+  skillLevel: Level;
 }
 
 export interface Adviser extends Character {
-  characterWhomItAdvise: Character;
+  characterWhomItAdvise: Squire | Fighter | King;
 }
 
 export interface Squire extends Character {
   characterWhomItServes: Fighter;
-  flattery: Level;
+  flatteryLevel: Level;
 }
