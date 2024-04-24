@@ -92,3 +92,47 @@ const createCharacter = (name: string, lastname: string, age: number) => ({
   age,
   isAlive: true,
 });
+
+const createKingCharacter = (
+  yearsOfReign: number,
+  speak: string,
+  die: void,
+) => ({
+  yearsOfReign: 7,
+  speak: "Vais a morir todos",
+  die,
+});
+console.log(createKingCharacter);
+
+const createFighterCharacter = (
+  weapon: string,
+  skillLevel: number,
+  speak: string,
+  die: void,
+) => ({
+  weapon,
+  skillLevel,
+  speak,
+  die,
+});
+
+const createAdviserrCharacter = (
+  characterWhomItAdvise: Fighter | King | Squire,
+  speak: string,
+  die: void,
+) => ({
+  characterWhomItAdvise,
+  speak,
+  die,
+});
+const createSquireCharacter = (
+  characterWhomItServes: Fighter | King | Squire,
+  flatteryLevel: number,
+  speak: string,
+  die: void,
+) => ({
+  characterWhomItServes,
+  flatteryLevel,
+  speak,
+  die,
+});
