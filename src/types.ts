@@ -20,11 +20,13 @@ export interface King extends Character {
 }
 
 export interface Fighter extends Character {
+  message: Message;
   weapon: string;
   skillLevel: Level;
 }
 
 export interface Adviser extends Character {
+  message: Message;
   characterWhomItAdvise: Squire | Fighter | King;
 }
 

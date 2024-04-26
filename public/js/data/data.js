@@ -1,55 +1,28 @@
-import type {
-  Fighter,
-  King,
-  Adviser,
-  Squire,
-  Character,
-  Level,
-} from "../types.js";
-
 export const kingMessage = "Vais a morir todos";
 export const fighterMessage = "Primero pego y luego pregunto";
 export const adviserMessage = "No sé por qué, pero creo que voy a morir pronto";
 export const squireMessage = "Soy un loser";
-
-const createCharacter = (name: string, lastName: string, age: number) => ({
+const createCharacter = (name, lastName, age) => ({
   name,
   lastName,
   age,
   isAlive: true,
 });
-
-export const createKingCharacter = (
-  name: string,
-  lastName: string,
-  age: number,
-  yearsOfReign: number,
-): King => ({
+export const createKingCharacter = (name, lastName, age, yearsOfReign) => ({
   name,
   lastName,
   age,
   isAlive: true,
   yearsOfReign,
-  speak(this: King) {
+  speak() {
     return kingMessage;
   },
-  die(this: King) {
+  die() {
     this.isAlive = false;
   },
 });
-
-const joffreyBaratheon: King = createKingCharacter(
-  "Jofrrey",
-  "Baratheon",
-  14,
-  2,
-);
-
-export const createFightCharacter = (
-  character: Character,
-  weapon: string,
-  skillLevel: Level,
-): Fighter => ({
+const joffreyBaratheon = createKingCharacter("Jofrrey", "Baratheon", 14, 2);
+export const createFightCharacter = (character, weapon, skillLevel) => ({
   name: character.name,
   lastName: character.lastName,
   age: character.age,
@@ -57,10 +30,11 @@ export const createFightCharacter = (
   weapon,
   message: fighterMessage,
   skillLevel,
-  speak(this: Fighter) {
+  speak() {
     return fighterMessage;
   },
-  die(this: Fighter) {
+  die() {
     this.isAlive = false;
   },
 });
+//# sourceMappingURL=data.js.map
