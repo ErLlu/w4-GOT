@@ -31,6 +31,7 @@ export interface Adviser extends Character {
 }
 
 export interface Squire extends Character {
+  message: Message;
   characterWhomItServes: Fighter;
   flatteryLevel: Level;
 }

@@ -1,5 +1,5 @@
-import { createKingCharacter } from "../data/data";
-import { type King } from "../types";
+import { createKingCharacter } from "./factories";
+import { type King, type Fighter } from "../types";
 
 describe("Given the function createKingCharacter", () => {
   describe("When it recives the name Joffrey, the surname Baratheon, the age 14, and the years reigning 2", () => {
