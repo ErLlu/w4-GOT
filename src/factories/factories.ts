@@ -5,6 +5,7 @@ import type {
   Squire,
   Character,
   Level,
+  CharacterWithoutMethods,
 } from "../types.js";
 
 export const kingMessage = "Vais a morir todos";
@@ -30,6 +31,7 @@ export const createKingCharacter = (
   age,
   isAlive: true,
   yearsOfReign,
+  message: kingMessage,
   speak(this: King) {
     return kingMessage;
   },
@@ -45,8 +47,8 @@ const joffreyBaratheon: King = createKingCharacter(
   2,
 );
 
-export const createFightCharacter = (
-  character: Character,
+export const createFighterCharacter = (
+  character: CharacterWithoutMethods,
   weapon: string,
   skillLevel: Level,
 ): Fighter => ({
