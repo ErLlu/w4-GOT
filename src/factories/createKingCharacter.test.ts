@@ -2,7 +2,7 @@ import { createKingCharacter, kingMessage } from "./factories";
 import { type King, type Fighter } from "../types";
 
 describe("Given the function createKingCharacter", () => {
-  describe("When it recives the name Joffrey, the surname Baratheon, the age 14, and the years reigning 2", () => {
+  describe("When it receive the name Joffrey, the surname Baratheon, the age 14, and the years reigning 2", () => {
     test("Then it should return a 14 years old King called Joffrey Baratheon, who has been reignin for 2 years", () => {
       const name = "Joffrey";
       const lastName = "Baratheon";
@@ -24,7 +24,7 @@ describe("Given the function createKingCharacter", () => {
     });
   });
 
-  describe("When it recives the name Joffrey, the surname Baratheon, the age 0, and the years reigning 0", () => {
+  describe("When it receive the name Joffrey, the surname Baratheon, the age 0, and the years reigning 0", () => {
     test("Then it should return a 0 years old King called Joffrey Baratheon, who has been reignin for 0 years", () => {
       const name = "Joffrey";
       const lastName = "Baratheon";
