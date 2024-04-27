@@ -6,11 +6,16 @@ export type Message =
   | "No sé por qué, pero creo que voy a morir pronto"
   | "Soy un loser";
 
+export type CharacterWithoutMethods = Omit<
+  Character,
+  "speak" | "die" | "isAlive"
+>;
 export interface Character {
   name: string;
   lastName: string;
   age: number;
   isAlive: true | false;
+  message: Message;
   speak: () => string;
   die: () => void;
 }

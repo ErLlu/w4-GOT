@@ -1,4 +1,4 @@
-import { createKingCharacter } from "./factories";
+import { createKingCharacter, kingMessage } from "./factories";
 import { type King, type Fighter } from "../types";
 
 describe("Given the function createKingCharacter", () => {
@@ -8,12 +8,14 @@ describe("Given the function createKingCharacter", () => {
       const lastName = "Baratheon";
       const age = 14;
       const yearsOfReign = 2;
+      const message = kingMessage;
       const expectedKing: Omit<King, "die" | "speak"> = {
         name,
         lastName,
         age,
         yearsOfReign,
         isAlive: true,
+        message,
       };
 
       const actualKing = createKingCharacter(name, lastName, age, yearsOfReign);
@@ -28,12 +30,14 @@ describe("Given the function createKingCharacter", () => {
       const lastName = "Baratheon";
       const age = 0;
       const yearsOfReign = 0;
+      const message = kingMessage;
       const expectedKing: Omit<King, "die" | "speak"> = {
         name,
         lastName,
         age,
         yearsOfReign,
         isAlive: true,
+        message,
       };
 
       const actualKing = createKingCharacter(name, lastName, age, yearsOfReign);
