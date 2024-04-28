@@ -40,13 +40,6 @@ export const createKingCharacter = (
   },
 });
 
-const joffreyBaratheon: King = createKingCharacter(
-  "Jofrrey",
-  "Baratheon",
-  14,
-  2,
-);
-
 export const createFighterCharacter = (
   character: CharacterWithoutMethods,
   weapon: string,

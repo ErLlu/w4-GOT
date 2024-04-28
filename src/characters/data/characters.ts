@@ -4,7 +4,7 @@ import {
   createKingCharacter,
   fighterMessage,
   kingMessage,
-} from "../../factories/factories";
+} from "../../factories/factories.js";
 
 const daenerysTargaryen: Fighter = createFighterCharacter(
   {
