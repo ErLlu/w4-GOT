@@ -1,4 +1,4 @@
-const root = document.querySelector(".root");
+const root = document.querySelector(".main-container");
 
 export const getHeader = (): HTMLElement => {
   const title = document.createElement("h1");
