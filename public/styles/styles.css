@@ -1,5 +1,15 @@
+:root {
+  --main-background: #b9540c;
+  --font-family: sans-serif;
+}
+
 *,
 ::after,
 ::before {
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-background);
+  font-family: var(--font-family);
 }
