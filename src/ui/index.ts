@@ -1,7 +1,6 @@
 import { getMainContainer } from "./mainContainer.js";
 import { getHeader } from "./header.js";
 import { type Character } from "../types.js";
-import { characters } from "../characters/data/characters.js";
 import { getCardContainer } from "./cardContainer.js";
 
 export const createMainContainer = () => {
