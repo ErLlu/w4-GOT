@@ -1,4 +1,4 @@
-import { type Character } from "../types";
+import { type Character } from "../types.js";
 import { createCharacterCard } from "./characterCards.js";
 
 export const getCardContainer = (characters: Character[]) => {

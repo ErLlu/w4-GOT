@@ -1,6 +1,7 @@
 :root {
   --main-background: #b9540c;
   --font-family: sans-serif;
+  max-width: 600;
 }
 
 *,
@@ -10,6 +11,7 @@
 }
 
 body {
+  margin: 0;
   background-color: var(--main-background);
   font-family: var(--font-family);
 }
@@ -18,11 +20,12 @@ h1 {
   margin: 0;
   color: #eee;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 54px;
 }
 
 h2 {
   margin: 0;
+  padding: 16px;
   color: #eee;
   display: flex;
   flex-direction: column-reverse;
@@ -36,8 +39,9 @@ li {
 }
 
 .main-container {
+  width: 75vw;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,17 +59,20 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  box-shadow: 0 2px 3px #333;
+  border-radius: 3%;
 }
 
 .character__age {
   margin: 0;
+  padding: 15px 0px 5px 15px;
   color: #eee;
   display: flex;
   flex-direction: column-reverse;
 }
 
 .character__status {
-  margin: 0;
+  padding: 15px;
   color: #eee;
   display: flex;
   flex-direction: column-reverse;
