@@ -1,8 +1,9 @@
 import { type Character } from "../types.js";
 
 export const createCharacterCard = (character: Character) => {
-  const card = document.createElement("div");
+  const card = document.createElement("article");
   const characterTitle = document.createElement("h2");
+  characterTitle.classList.add("character-title");
 
   const fullName = `${character.name} ${character.lastName}`;
   characterTitle.textContent = fullName;

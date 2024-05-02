@@ -40,3 +40,7 @@ export interface Squire extends Character {
   characterWhomItServes: Fighter;
   flatteryLevel: Level;
 }
+
+export interface Characters {
+  characters: Character[];
+}

@@ -3,7 +3,7 @@ import { createCharacterCard } from "./characterCards.js";
 
 export const getCardContainer = (characters: Character[]) => {
   const charactersList = document.createElement("ul");
-  charactersList.classList.add("card-container");
+  charactersList.classList.add("cards-container");
 
   characters.forEach((character) => {
     const characterElement = document.createElement("li");

@@ -11,10 +11,13 @@ export const createMainContainer = () => {
   return mainContainer;
 };
 
-export const renderGeneralLayout = (title: string, characters: Character[]) => {
+export const renderGeneralLayout = (
+  heading: string,
+  characters: Character[],
+) => {
   const rootElement = document.querySelector(".root");
   const mainContainer = getMainContainer();
-  const header = getHeader();
+  const header = getHeader("Game Of Thrones");
   const caracterList = getCardContainer(characters);
 
   if (!mainContainer) {
