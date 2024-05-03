@@ -4,7 +4,7 @@ describe("Given the function getMainContainer", () => {
     test("Then it should return a 'main-container'", () => {
       const mainContainer = getMainContainer();
 
-      const actualMainContainer = mainContainer.querySelector("div")!;
+      const actualMainContainer = mainContainer.querySelector("div");
 
       expect(mainContainer.tagName).toBe("DIV");
       expect(mainContainer.classList.contains("main-container")).toBe(true);
