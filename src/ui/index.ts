@@ -30,3 +30,13 @@ export const renderGeneralLayout = (
     mainContainer.appendChild(caracterList);
   }
 };
+
+export const renderCharacterList = (characters: Character[]) => {
+  const mainContainer = document.querySelector(".main-container");
+
+  if (!mainContainer) {
+    throw Error("Element not found");
+  }
+
+  mainContainer.appendChild(getCardContainer(characters));
+};
